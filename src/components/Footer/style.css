@@ -2,7 +2,7 @@
   width: 100vw;
   height: 5%;
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center;
 }
 .footer__text {

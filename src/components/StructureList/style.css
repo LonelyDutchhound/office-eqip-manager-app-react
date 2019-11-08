@@ -5,3 +5,6 @@
   border: 1px solid #ffffff;
   border-collapse: collapse;
 }
+.panel__list {
+  background-color: #ffffff;
+}

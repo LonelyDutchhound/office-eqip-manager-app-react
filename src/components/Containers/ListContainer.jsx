@@ -5,7 +5,7 @@ import StructureList from "../StructureList";
 const ListContainer = ({ structure, equipment }) => (
   <div className="container">
     <StructureList unitList={structure} />
-    <StructureList unitList={equipment} />
+    {/* <StructureList unitList={equipment} /> */}
   </div>
 );
 
