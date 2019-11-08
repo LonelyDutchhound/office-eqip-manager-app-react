@@ -1,0 +1,12 @@
+.header {
+  width: 100vw;
+  height: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header__title {
+  text-transform: uppercase;
+  text-align: center;
+  color: white;
+}
