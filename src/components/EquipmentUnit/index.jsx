@@ -1,8 +1,7 @@
-import React, { useState } from "react";
+import React from "react";
 
 const EquipmentUnit = ({ unit }) => {
-  const [isOpened, setIsOpened] = useState(false);
-  const { _id, name, count } = unit;
+  const { name } = unit;
   return <>{name ? <li>{name}</li> : null}</>;
 };
 

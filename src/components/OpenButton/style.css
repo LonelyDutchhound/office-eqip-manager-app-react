@@ -1,0 +1,11 @@
+.item__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20px;
+  width: 20px;
+  margin: 3px;
+  color:  #ffffff;
+  border: 1px solid #ffffff;
+  border-collapse: collapse;
+}

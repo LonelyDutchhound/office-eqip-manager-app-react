@@ -2,29 +2,32 @@
   background: #ffffff;
 }
 .list__item {
+  position: relative;
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
   margin: 5px;
   background: #ffffff;
-  color: #96b2b2;
   border: 1px solid #96b2b2;
   border-collapse: collapse;
 }
-.item__name {
+.item__label {
+  height: 100%;
+  flex-grow: 1;
+  display: flex;
+  justify-content: flex-start;
+  background: #ffffff;
+}
+.item__title {
+  flex-grow: 1;
   padding: 5px;
   text-align: start;
   background: #ffffff;
   color: #96b2b2;
 }
-.item__button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 20px;
-  width: 20px;
-  margin: 5px;
-  color:  #ffffff;
-  border: 1px solid #ffffff;
-  border-collapse: collapse;
+.item__selector {
+  visibility: hidden;
+}
+.item__selector:checked ~ .item__title {
+  color: #d81200;
 }

@@ -1,28 +1,28 @@
 import Scorocode from "scorocode";
-import { BUILDINGS, EQUIPMENT } from "../sagas/constants";
+import { BUILDINGS, EQUIPMENT } from "../../sagas/constants";
 
 const equipMap = equipArray => {
+  console.log(equipArray);
   return equipArray.reduce((accum, next) => {
-    if (accum[next.room]) {
-      // eslint-disable-next-line no-param-reassign
-      accum[next.room] = [
-        ...accum[next.room],
-        {
-          // eslint-disable-next-line no-underscore-dangle
-          _id: next._id,
-          name: next.name
-        }
-      ];
-    } else {
-      // eslint-disable-next-line no-param-reassign
-      accum[next.room] = [
-        {
-          // eslint-disable-next-line no-underscore-dangle
-          _id: next._id,
-          name: next.name
-        }
-      ];
-    }
+    const { _id, name, room, count } = next;
+    accum[next.room] = accum[next.room]
+      ? [
+          ...accum[next.room],
+          {
+            id: _id,
+            name,
+            room,
+            count
+          }
+        ]
+      : [
+          {
+            id: _id,
+            name,
+            room,
+            count
+          }
+        ];
     return accum;
   }, {});
 };
@@ -50,7 +50,6 @@ const structureMap = structureArray => {
   });
 };
 
-// eslint-disable-next-line consistent-return
 export default async infoField => {
   try {
     const archive = new Scorocode.Query(infoField);

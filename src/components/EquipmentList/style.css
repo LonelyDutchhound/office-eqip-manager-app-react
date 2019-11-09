@@ -1,0 +1,10 @@
+.panel {
+  width: 47%;
+  height: 100%;
+  background-color: #ffffff;
+  border: 1px solid #ffffff;
+  border-collapse: collapse;
+}
+.panel__list {
+  background-color: #ffffff;
+}

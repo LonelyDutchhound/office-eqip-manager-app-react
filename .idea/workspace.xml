@@ -2,20 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="553660b4-7484-4661-bc32-1edb49bb8ca8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/styleConstants.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/store/reducers/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/idArrayCreator.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Containers/EquipmentListContainer/index.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/OpenButton/index.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/OpenButton/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Containers/ListContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Containers/ListContainer.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Footer/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Footer/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Containers/ListContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Containers/ListContainer/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/EquipmentList/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/EquipmentList/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/EquipmentList/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/EquipmentList/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/EquipmentUnit/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/EquipmentUnit/index.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/StructureList/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/StructureList/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/StructureList/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/StructureList/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/StructureUnit/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/StructureUnit/index.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/StructureUnit/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/StructureUnit/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/actions/equipmentActions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/actions/equipmentActions.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/constants/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/constants/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/reducers/setReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/reducers/setReducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/getnfoScorocode.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/getnfoScorocode.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sagas/getEquipmentSaga.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/sagas/getEquipmentSaga.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sagas/getStructureSaga.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/sagas/getStructureSaga.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/APIUtils/auth.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/getnfoScorocode.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/APIUtils/getnfoScorocode.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/idArrayCreator.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/supportUtils/idArrayCreator.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -50,19 +53,19 @@
     <property name="settings.editor.selected.configurable" value="preferences.sourceCode.CSS" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\JSProjects\InWork\equip-manager\src\components" />
-      <recent name="D:\JSProjects\InWork\equip-manager\src\components\StructureUnit" />
-      <recent name="D:\JSProjects\InWork\equip-manager\public" />
-      <recent name="D:\JSProjects\InWork\equip-manager\src\components\Footer" />
-      <recent name="D:\JSProjects\InWork\equip-manager\src\components\StructureList" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\JSProjects\InWork\equip-manager\src\components\StructureSubUnit" />
       <recent name="D:\JSProjects\InWork\equip-manager\src" />
       <recent name="D:\JSProjects\InWork\equip-manager\src\components\StructureUnit" />
       <recent name="D:\JSProjects\InWork\equip-manager\src\components\StructureList" />
       <recent name="D:\JSProjects\InWork\equip-manager\src\components\EquipmentList" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\JSProjects\InWork\equip-manager\src\components\Containers\ListContainer" />
+      <recent name="D:\JSProjects\InWork\equip-manager\src\components\Utils" />
+      <recent name="D:\JSProjects\InWork\equip-manager\src\utils\createUtils" />
+      <recent name="D:\JSProjects\InWork\equip-manager\src\utils\APIUtils" />
+      <recent name="D:\JSProjects\InWork\equip-manager\src\components" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -104,7 +107,10 @@
       <updated>1573143223439</updated>
       <workItem from="1573143224652" duration="23807000" />
       <workItem from="1573198002239" duration="37103000" />
-      <workItem from="1573241707512" duration="4523000" />
+      <workItem from="1573241707512" duration="4849000" />
+      <workItem from="1573255323657" duration="3679000" />
+      <workItem from="1573259025168" duration="1095000" />
+      <workItem from="1573300903137" duration="15172000" />
     </task>
     <task id="LOCAL-00001" summary="structure, store+store setters, sketch components">
       <created>1573171734567</created>
@@ -113,11 +119,28 @@
       <option name="project" value="LOCAL" />
       <updated>1573171734567</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="structure representation model: open-close, store: showEquipArray for equip representation component">
+      <created>1573246549467</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1573246549468</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -134,6 +157,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="structure, store+store setters, sketch components" />
-    <option name="LAST_COMMIT_MESSAGE" value="structure, store+store setters, sketch components" />
+    <MESSAGE value="structure representation model: open-close, store: showEquipArray for equip representation component" />
+    <option name="LAST_COMMIT_MESSAGE" value="structure representation model: open-close, store: showEquipArray for equip representation component" />
   </component>
 </project>

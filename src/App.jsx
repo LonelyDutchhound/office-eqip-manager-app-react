@@ -3,7 +3,7 @@ import { Provider } from "react-redux";
 import "./App.css";
 
 import rootSaga from "./sagas/rootSaga";
-import Auth from "./utils/auth";
+import Auth from "./utils/APIUtils/auth";
 import configureStore from "./store/configureStore";
 
 import Header from "./components/Header";

@@ -1,4 +1,4 @@
-export const idArrayCreator = unit => {
+const idArrayCreator = unit => {
   const idArray = [];
   idArray.push(unit.id);
   if (unit.rooms) {
@@ -8,3 +8,5 @@ export const idArrayCreator = unit => {
   }
   return idArray;
 };
+
+export default idArrayCreator;
