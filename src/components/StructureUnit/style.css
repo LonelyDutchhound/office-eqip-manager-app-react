@@ -4,6 +4,7 @@
 .list__item {
   position: relative;
   display: flex;
+  flex-direction: row;
   justify-content: flex-start;
   align-items: flex-start;
   margin: 5px;
@@ -24,6 +25,7 @@
   text-align: start;
   background: #ffffff;
   color: #96b2b2;
+  cursor: pointer;
 }
 .item__selector {
   visibility: hidden;

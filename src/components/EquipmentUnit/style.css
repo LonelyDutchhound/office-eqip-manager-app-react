@@ -1,0 +1,5 @@
+.item__quantity {
+  display: flex;
+  width: 15%;;
+  margin: 3px;
+}

@@ -17,17 +17,19 @@ const addEquipment = (id, name, count) => ({
   count
 });
 
-const editEquipment = (id, name, count) => ({
+const editEquipment = (id, name, quantity, room) => ({
   type: EDIT_EQUIPMENT,
-  id,
-  name,
-  count
+  data: {
+    id,
+    name,
+    quantity,
+    room
+  }
 });
 
-const deleteEquipment = (id, name) => ({
+const deleteEquipment = id => ({
   type: DELETE_EQUIPMENT,
-  id,
-  name
+  data: { id }
 });
 
 export { showEquipment, addEquipment, editEquipment, deleteEquipment };

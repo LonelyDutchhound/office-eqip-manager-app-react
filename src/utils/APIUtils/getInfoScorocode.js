@@ -2,7 +2,6 @@ import Scorocode from "scorocode";
 import { BUILDINGS, EQUIPMENT } from "../../sagas/constants";
 
 const equipMap = equipArray => {
-  console.log(equipArray);
   return equipArray.reduce((accum, next) => {
     const { _id, name, room, count } = next;
     accum[next.room] = accum[next.room]

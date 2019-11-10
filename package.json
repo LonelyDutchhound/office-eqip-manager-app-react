@@ -25,7 +25,10 @@
       "airbnb",
       "plugin:prettier/recommended",
       "prettier/react"
-    ]
+    ],
+    "rules":  {
+      "react/prop-types": 0
+    }
   },
   "browserslist": {
     "production": [

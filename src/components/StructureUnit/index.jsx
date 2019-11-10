@@ -4,10 +4,11 @@ import idArrayCreator from "../../utils/supportUtils/idArrayCreator";
 import { showEquipment } from "../../store/actions/equipmentActions";
 
 import "./style.css";
-import OpenButton from "../OpenButton";
+import SmallButton from "../SmallButton";
+import { GREEN, RED } from "../styleConstants";
 
 const StructureUnit = ({ unit, showRelEquipment }) => {
-  const { name, rooms } = unit;
+  const { name, rooms, id } = unit;
   const [isOpened, setIsOpened] = useState(false);
 
   const handleClick = () => {
@@ -31,12 +32,19 @@ const StructureUnit = ({ unit, showRelEquipment }) => {
 
   return (
     <>
-      {/* eslint-disable-next-line jsx-a11y/click-events-have-key-events */}
-      <li className="list__item" onClick={handleClick}>
-        {rooms ? <OpenButton isOpened={isOpened} /> : null}
-        <label className="item__label">
-
+      <li className="list__item">
+        {rooms ? (
+          <SmallButton
+            style={
+              isOpened ? { backgroundColor: RED } : { backgroundColor: GREEN }
+            }
+            name={isOpened ? "\u25BD" : "\u25B7"}
+            onClick={handleClick}
+          />
+        ) : null}
+        <label className="item__label" htmlFor={id}>
           <input
+            id={id}
             className="item__selector"
             type="radio"
             name="unit"

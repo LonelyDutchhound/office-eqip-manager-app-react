@@ -8,4 +8,10 @@
   color:  #ffffff;
   border: 1px solid #ffffff;
   border-collapse: collapse;
+  padding: 0;
+  cursor: pointer;
+}
+.item__button:active,
+.item__button:focus {
+  outline: none;
 }

@@ -1,6 +1,6 @@
 import { put, call } from "redux-saga/effects";
 import * as getInfo from "../store/actions/getInfoActions";
-import getInfoScorocode from "../utils/APIUtils/getnfoScorocode";
+import getInfoScorocode from "../utils/APIUtils/getInfoScorocode";
 import { EQUIPMENT } from "./constants";
 
 const { setEquipment } = getInfo;
