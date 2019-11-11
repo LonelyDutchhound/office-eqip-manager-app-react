@@ -3,7 +3,8 @@ import {
   ADD_EQUIPMENT,
   EDIT_EQUIPMENT,
   DELETE_EQUIPMENT,
-  SET_IS_ROOM
+  SET_IS_ROOM,
+  SET_IS_ADDING
 } from "../constants";
 
 const showEquipment = idArray => ({
@@ -39,4 +40,16 @@ const setRoom = isRoom => ({
   isRoom
 });
 
-export { showEquipment, addEquipment, editEquipment, deleteEquipment, setRoom };
+const isAddingOn = isAdding => ({
+  type: SET_IS_ADDING,
+  isAdding
+});
+
+export {
+  showEquipment,
+  addEquipment,
+  editEquipment,
+  deleteEquipment,
+  setRoom,
+  isAddingOn
+};

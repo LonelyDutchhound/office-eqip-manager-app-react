@@ -3,7 +3,11 @@ import { connect } from "react-redux";
 import EquipmentList from "../../EquipmentList";
 
 const EquipmentListContainer = ({ equipment, showEquipArray, isRoom }) => {
-  const startText = "Выберите здание/помещение для просмотра оборудования";
+  const startText = (
+    <p className="message">
+      Выберите здание/помещение для просмотра оборудования
+    </p>
+  );
 
   if (showEquipArray.length === 0)
     return <EquipmentList unitList={null} startText={startText} />;

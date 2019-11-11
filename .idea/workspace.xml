@@ -3,7 +3,15 @@
   <component name="ChangeListManager">
     <list default="true" id="553660b4-7484-4661-bc32-1edb49bb8ca8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Containers/EquipmentListContainer/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Containers/EquipmentListContainer/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/EquipmentList/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/EquipmentList/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/EquipmentList/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/EquipmentList/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/StructureUnit/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/StructureUnit/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/actions/equipmentActions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/actions/equipmentActions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/constants/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/constants/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/reducers/setReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/reducers/setReducer.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/utils/APIUtils/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/APIUtils/auth.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -23,7 +31,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js.linters.configure.manually.selectedeslint" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components/StructureSubUnit" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -100,7 +108,10 @@
       <workItem from="1573377438197" duration="10742000" />
       <workItem from="1573423176499" duration="1811000" />
       <workItem from="1573452644879" duration="4771000" />
-      <workItem from="1573457444007" duration="12892000" />
+      <workItem from="1573457444007" duration="13342000" />
+      <workItem from="1573471865365" duration="2000" />
+      <workItem from="1573473685022" duration="297000" />
+      <workItem from="1573478834022" duration="3939000" />
     </task>
     <task id="LOCAL-00001" summary="structure, store+store setters, sketch components">
       <created>1573171734567</created>
@@ -137,7 +148,14 @@
       <option name="project" value="LOCAL" />
       <updated>1573470291726</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="-- ID &amp; keys">
+      <created>1573471422981</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1573471422981</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -172,6 +190,7 @@
     <MESSAGE value="container component for equipList, equipment representation w/o styling (radiobuttons), fixed equip array mapping (incl. count anf room), some refactoring" />
     <MESSAGE value="edit + delete features implemented using saga lib." />
     <MESSAGE value="task completed, refactoring is needed" />
-    <option name="LAST_COMMIT_MESSAGE" value="task completed, refactoring is needed" />
+    <MESSAGE value="-- ID &amp; keys" />
+    <option name="LAST_COMMIT_MESSAGE" value="-- ID &amp; keys" />
   </component>
 </project>

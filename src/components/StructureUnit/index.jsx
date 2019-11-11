@@ -6,7 +6,7 @@ import SmallButton from "../SmallButton";
 import { GREEN, RED } from "../styleConstants";
 import "./style.css";
 
-const StructureUnit = ({ unit, showRelEquipment, setIsRoom }) => {
+const StructureUnit = ({ unit, showRelEquipment, setIsRoom, isAddingOn }) => {
   const { name, rooms, id } = unit;
   const [isOpened, setIsOpened] = useState(false);
 
@@ -27,6 +27,7 @@ const StructureUnit = ({ unit, showRelEquipment, setIsRoom }) => {
         unit={room}
         showRelEquipment={showRelEquipment}
         setIsRoom={setIsRoom}
+        isAddingOn={isAddingOn}
         key={room.id}
       />
     ));
@@ -51,6 +52,7 @@ const StructureUnit = ({ unit, showRelEquipment, setIsRoom }) => {
             className="item__selector"
             type="radio"
             name="unit"
+            disabled={isAddingOn}
             onChange={handleChange}
           />
           <p className="item__title">{name}</p>
@@ -63,12 +65,16 @@ const StructureUnit = ({ unit, showRelEquipment, setIsRoom }) => {
   );
 };
 
+const mapStateToProps = state => ({
+  isAddingOn: state.isAddingOn
+});
+
 const mapDispatchToProps = dispatch => ({
   showRelEquipment: idArray => dispatch(showEquipment(idArray)),
   setIsRoom: isRoom => dispatch(setRoom(isRoom))
 });
 
 export default connect(
-  null,
+  mapStateToProps,
   mapDispatchToProps
 )(StructureUnit);

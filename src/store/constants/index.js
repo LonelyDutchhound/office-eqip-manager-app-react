@@ -5,3 +5,4 @@ export const DELETE_EQUIPMENT = "DELETE_EQUIPMENT";
 export const EDIT_EQUIPMENT = "EDIT_EQUIPMENT";
 export const SHOW_EQUIPMENT = "SHOW_EQUIPMENT";
 export const SET_IS_ROOM = "SET_IS_ROOM";
+export const SET_IS_ADDING = "SET_IS_ADDING";

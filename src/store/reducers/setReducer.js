@@ -3,6 +3,7 @@ import {
   DELETE_EQUIPMENT,
   EDIT_EQUIPMENT,
   SET_EQUIPMENT,
+  SET_IS_ADDING,
   SET_IS_ROOM,
   SET_STRUCTURE,
   SHOW_EQUIPMENT
@@ -14,7 +15,8 @@ const setReducer = (
     equipment: {},
     showEquipArray: [],
     postItemData: {},
-    isRoom: false
+    isRoom: false,
+    isAddingOn: false
   },
   action
 ) => {
@@ -31,6 +33,8 @@ const setReducer = (
       return { ...state, postItemData: action.data };
     case SET_IS_ROOM:
       return { ...state, isRoom: action.isRoom };
+    case SET_IS_ADDING:
+      return { ...state, isAddingOn: action.isAdding };
     default:
       return state;
   }
