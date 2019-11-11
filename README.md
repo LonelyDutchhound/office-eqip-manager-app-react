@@ -1,7 +1,6 @@
 ### Проект создан с помощью CLI Create React App
 
-## Пароль и логин авторизации на Scorocode не запушены в репозиторий: 
-подставьте их сами в файл [src/utils/APIUtils/auth.js](src/utils/APIUtils/auth.js)
+## Развернут тут: https://lonelydutchhound.github.io/office-equip-manager-app/
 
 ## Скрипты
 
