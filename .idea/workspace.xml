@@ -1,31 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="553660b4-7484-4661-bc32-1edb49bb8ca8" name="Default Changelist" comment="task completed, refactoring is needed">
-      <change afterPath="$PROJECT_DIR$/src/components/AddUnit/index.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/AddUnit/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/QuantityInput/index.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/QuantityInput/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/TextInput/index.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/TextInput/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sagas/addEquipmentSaga.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/APIUtils/addEquipScorocode.js" afterDir="false" />
+    <list default="true" id="553660b4-7484-4661-bc32-1edb49bb8ca8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Containers/EquipmentListContainer/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Containers/EquipmentListContainer/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/EquipmentList/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/EquipmentList/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/EquipmentUnit/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/EquipmentUnit/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/EquipmentUnit/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/EquipmentUnit/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/SmallButton/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SmallButton/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/SmallButton/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SmallButton/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/StructureList/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/StructureList/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/StructureUnit/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/StructureUnit/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sagas/editEquipmentSaga.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/sagas/editEquipmentSaga.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sagas/rootSaga.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/sagas/rootSaga.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sagas/watchSagas.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/sagas/watchSagas.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/actions/equipmentActions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/actions/equipmentActions.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/constants/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/constants/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/reducers/setReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/reducers/setReducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/APIUtils/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/APIUtils/auth.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -121,7 +100,7 @@
       <workItem from="1573377438197" duration="10742000" />
       <workItem from="1573423176499" duration="1811000" />
       <workItem from="1573452644879" duration="4771000" />
-      <workItem from="1573457444007" duration="11708000" />
+      <workItem from="1573457444007" duration="12892000" />
     </task>
     <task id="LOCAL-00001" summary="structure, store+store setters, sketch components">
       <created>1573171734567</created>
@@ -151,7 +130,14 @@
       <option name="project" value="LOCAL" />
       <updated>1573386579757</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="task completed, refactoring is needed">
+      <created>1573470291726</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1573470291726</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
