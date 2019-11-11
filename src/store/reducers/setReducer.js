@@ -1,13 +1,21 @@
 import {
+  ADD_EQUIPMENT,
   DELETE_EQUIPMENT,
   EDIT_EQUIPMENT,
   SET_EQUIPMENT,
+  SET_IS_ROOM,
   SET_STRUCTURE,
   SHOW_EQUIPMENT
 } from "../constants/index";
 
 const setReducer = (
-  state = { structure: [], equipment: {}, showEquipArray: [] },
+  state = {
+    structure: [],
+    equipment: {},
+    showEquipArray: [],
+    postItemData: {},
+    isRoom: false
+  },
   action
 ) => {
   switch (action.type) {
@@ -19,7 +27,10 @@ const setReducer = (
       return { ...state, showEquipArray: action.idArray };
     case EDIT_EQUIPMENT:
     case DELETE_EQUIPMENT:
+    case ADD_EQUIPMENT:
       return { ...state, postItemData: action.data };
+    case SET_IS_ROOM:
+      return { ...state, isRoom: action.isRoom };
     default:
       return state;
   }

@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { connect } from "react-redux";
 import SmallButton from "../SmallButton";
+import QuantityInput from "../QuantityInput";
 import { RED, BLUE, GREEN } from "../styleConstants";
 import "./style.css";
 import {
@@ -8,7 +9,12 @@ import {
   editEquipment
 } from "../../store/actions/equipmentActions";
 
-const EquipmentUnit = ({ unit, editEquipQuantity, deleteEquipmentItem }) => {
+const EquipmentUnit = ({
+  unit,
+  editEquipQuantity,
+  deleteEquipmentItem,
+  isRoom
+}) => {
   const { id, name, count, room } = unit;
   const [quantity, setQuantity] = useState(count);
   const [isEditable, setEditable] = useState(false);
@@ -28,28 +34,35 @@ const EquipmentUnit = ({ unit, editEquipQuantity, deleteEquipmentItem }) => {
     <>
       <li className="list__item">
         <p className="item__title">{name}</p>
-        <input
+        <QuantityInput
           readOnly={!isEditable}
-          className="item__quantity"
-          type="number"
-          value={quantity}
-          min="1"
+          quantity={quantity}
           onChange={handleChange}
         />
-        <SmallButton
-          style={{ backgroundColor: isEditable ? GREEN : BLUE }}
-          name={isEditable ? "\u2611" : "\u270E"}
-          onClick={handleClickEdit}
-        />
-        <SmallButton
-          style={{ backgroundColor: RED }}
-          name={"\u1CF5"}
-          onClick={handleClickDelete}
-        />
+        {isRoom ? (
+          <>
+            <SmallButton
+              className="item__button"
+              style={{ backgroundColor: isEditable ? GREEN : BLUE }}
+              name={isEditable ? "\u2611" : "\u270E"}
+              onClick={handleClickEdit}
+            />
+            <SmallButton
+              className="item__button"
+              style={{ backgroundColor: RED }}
+              name={"\u1CF5"}
+              onClick={handleClickDelete}
+            />
+          </>
+        ) : null}
       </li>
     </>
   );
 };
+
+const mapStateToProps = state => ({
+  isRoom: state.isRoom
+});
 
 const mapDispatchToProps = dispatch => ({
   editEquipQuantity: (id, name, count, room) =>
@@ -58,6 +71,6 @@ const mapDispatchToProps = dispatch => ({
 });
 
 export default connect(
-  null,
+  mapStateToProps,
   mapDispatchToProps
 )(EquipmentUnit);

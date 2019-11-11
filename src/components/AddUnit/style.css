@@ -1,0 +1,11 @@
+.list__wrapper {
+  display: flex;
+  flex-direction: column;
+  background: #ffffff;
+}
+.list__error {
+  background: #ffffff;
+  color: #d81200;
+  text-align: center;
+  padding: 5px;
+}

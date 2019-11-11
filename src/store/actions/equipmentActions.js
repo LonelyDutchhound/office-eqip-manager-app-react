@@ -2,7 +2,8 @@ import {
   SHOW_EQUIPMENT,
   ADD_EQUIPMENT,
   EDIT_EQUIPMENT,
-  DELETE_EQUIPMENT
+  DELETE_EQUIPMENT,
+  SET_IS_ROOM
 } from "../constants";
 
 const showEquipment = idArray => ({
@@ -10,11 +11,12 @@ const showEquipment = idArray => ({
   idArray
 });
 
-const addEquipment = (id, name, count) => ({
+const addEquipment = (name, quantity) => ({
   type: ADD_EQUIPMENT,
-  id,
-  name,
-  count
+  data: {
+    name,
+    quantity
+  }
 });
 
 const editEquipment = (id, name, quantity, room) => ({
@@ -32,4 +34,9 @@ const deleteEquipment = id => ({
   data: { id }
 });
 
-export { showEquipment, addEquipment, editEquipment, deleteEquipment };
+const setRoom = isRoom => ({
+  type: SET_IS_ROOM,
+  isRoom
+});
+
+export { showEquipment, addEquipment, editEquipment, deleteEquipment, setRoom };

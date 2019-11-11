@@ -8,9 +8,7 @@ const { setEquipment } = getInfo;
 
 export default function* editEquipmentSaga() {
   const editItemData = yield select(state => state.postItemData);
-
   yield call(editEquipScorocode, editItemData);
-
   const equipment = yield call(getInfoScorocode, EQUIPMENT);
   yield put(setEquipment(equipment));
 }

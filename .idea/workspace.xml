@@ -1,28 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="553660b4-7484-4661-bc32-1edb49bb8ca8" name="Default Changelist" comment="edit + delete features implemented using saga lib.">
-      <change afterPath="$PROJECT_DIR$/src/components/SmallButton/index.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sagas/deleteEquipmentSaga.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sagas/editEquipmentSaga.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/sagas/watchSagas.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/APIUtils/deleteEquipScorocode.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/APIUtils/editEquipScorocode.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/equip-manager.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/equip-manager.iml" afterDir="false" />
+    <list default="true" id="553660b4-7484-4661-bc32-1edb49bb8ca8" name="Default Changelist" comment="task completed, refactoring is needed">
+      <change afterPath="$PROJECT_DIR$/src/components/AddUnit/index.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/AddUnit/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/QuantityInput/index.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/QuantityInput/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/TextInput/index.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/TextInput/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/sagas/addEquipmentSaga.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/APIUtils/addEquipScorocode.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Containers/EquipmentListContainer/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Containers/EquipmentListContainer/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/EquipmentList/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/EquipmentList/index.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/EquipmentUnit/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/EquipmentUnit/index.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/EquipmentUnit/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/EquipmentUnit/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/OpenButton/index.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/OpenButton/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SmallButton/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/SmallButton/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SmallButton/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/SmallButton/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SmallButton/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/StructureList/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/StructureList/index.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/StructureUnit/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/StructureUnit/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/StructureUnit/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/StructureUnit/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sagas/getEquipmentSaga.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/sagas/getEquipmentSaga.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sagas/getStructureSaga.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/sagas/getStructureSaga.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sagas/editEquipmentSaga.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/sagas/editEquipmentSaga.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/sagas/rootSaga.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/sagas/rootSaga.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sagas/watchSagas.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/sagas/watchSagas.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/store/actions/equipmentActions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/actions/equipmentActions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/constants/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/constants/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/store/reducers/setReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/reducers/setReducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/APIUtils/getnfoScorocode.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/APIUtils/getInfoScorocode.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -57,19 +60,19 @@
     <property name="settings.editor.selected.configurable" value="preferences.sourceCode.CSS" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\JSProjects\InWork\equip-manager\src\components\StructureSubUnit" />
-      <recent name="D:\JSProjects\InWork\equip-manager\src" />
-      <recent name="D:\JSProjects\InWork\equip-manager\src\components\StructureUnit" />
-      <recent name="D:\JSProjects\InWork\equip-manager\src\components\StructureList" />
-      <recent name="D:\JSProjects\InWork\equip-manager\src\components\EquipmentList" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\JSProjects\InWork\equip-manager\src\components\Containers\ListContainer" />
       <recent name="D:\JSProjects\InWork\equip-manager\src\components\Utils" />
       <recent name="D:\JSProjects\InWork\equip-manager\src\utils\createUtils" />
       <recent name="D:\JSProjects\InWork\equip-manager\src\utils\APIUtils" />
       <recent name="D:\JSProjects\InWork\equip-manager\src\components" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\JSProjects\InWork\equip-manager\src\components\StructureSubUnit" />
+      <recent name="D:\JSProjects\InWork\equip-manager\src" />
+      <recent name="D:\JSProjects\InWork\equip-manager\src\components\StructureUnit" />
+      <recent name="D:\JSProjects\InWork\equip-manager\src\components\StructureList" />
+      <recent name="D:\JSProjects\InWork\equip-manager\src\components\EquipmentList" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -115,7 +118,10 @@
       <workItem from="1573255323657" duration="3679000" />
       <workItem from="1573259025168" duration="1095000" />
       <workItem from="1573300903137" duration="29202000" />
-      <workItem from="1573377438197" duration="8156000" />
+      <workItem from="1573377438197" duration="10742000" />
+      <workItem from="1573423176499" duration="1811000" />
+      <workItem from="1573452644879" duration="4771000" />
+      <workItem from="1573457444007" duration="11708000" />
     </task>
     <task id="LOCAL-00001" summary="structure, store+store setters, sketch components">
       <created>1573171734567</created>
@@ -138,7 +144,14 @@
       <option name="project" value="LOCAL" />
       <updated>1573316540384</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="edit + delete features implemented using saga lib.">
+      <created>1573386579757</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1573386579757</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -172,6 +185,7 @@
     <MESSAGE value="structure representation model: open-close, store: showEquipArray for equip representation component" />
     <MESSAGE value="container component for equipList, equipment representation w/o styling (radiobuttons), fixed equip array mapping (incl. count anf room), some refactoring" />
     <MESSAGE value="edit + delete features implemented using saga lib." />
-    <option name="LAST_COMMIT_MESSAGE" value="edit + delete features implemented using saga lib." />
+    <MESSAGE value="task completed, refactoring is needed" />
+    <option name="LAST_COMMIT_MESSAGE" value="task completed, refactoring is needed" />
   </component>
 </project>

@@ -1,13 +1,12 @@
 import React, { useState } from "react";
 import { connect } from "react-redux";
 import idArrayCreator from "../../utils/supportUtils/idArrayCreator";
-import { showEquipment } from "../../store/actions/equipmentActions";
-
-import "./style.css";
+import { setRoom, showEquipment } from "../../store/actions/equipmentActions";
 import SmallButton from "../SmallButton";
 import { GREEN, RED } from "../styleConstants";
+import "./style.css";
 
-const StructureUnit = ({ unit, showRelEquipment }) => {
+const StructureUnit = ({ unit, showRelEquipment, setIsRoom }) => {
   const { name, rooms, id } = unit;
   const [isOpened, setIsOpened] = useState(false);
 
@@ -17,6 +16,8 @@ const StructureUnit = ({ unit, showRelEquipment }) => {
 
   const handleChange = () => {
     const equipIdArray = idArrayCreator(unit);
+    if (unit.rooms) setIsRoom(false);
+    else setIsRoom(id);
     showRelEquipment(equipIdArray);
   };
 
@@ -25,6 +26,7 @@ const StructureUnit = ({ unit, showRelEquipment }) => {
       <StructureUnit
         unit={room}
         showRelEquipment={showRelEquipment}
+        setIsRoom={setIsRoom}
         key={room.id}
       />
     ));
@@ -35,6 +37,7 @@ const StructureUnit = ({ unit, showRelEquipment }) => {
       <li className="list__item">
         {rooms ? (
           <SmallButton
+            className="item__button"
             style={
               isOpened ? { backgroundColor: RED } : { backgroundColor: GREEN }
             }
@@ -61,7 +64,8 @@ const StructureUnit = ({ unit, showRelEquipment }) => {
 };
 
 const mapDispatchToProps = dispatch => ({
-  showRelEquipment: idArray => dispatch(showEquipment(idArray))
+  showRelEquipment: idArray => dispatch(showEquipment(idArray)),
+  setIsRoom: isRoom => dispatch(setRoom(isRoom))
 });
 
 export default connect(

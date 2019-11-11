@@ -1,0 +1,10 @@
+.item__quantity {
+  display: flex;
+  flex-shrink: 0;
+  width: 15%;;
+  margin: 3px;
+  text-align: right;
+}
+.item__quantity:read-only {
+  border: none;
+}

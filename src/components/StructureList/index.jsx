@@ -4,7 +4,6 @@ import "./style.css";
 import StructureUnit from "../StructureUnit";
 
 const StructureList = ({ unitList }) => {
-
   const structureUnit = unitList.map(unit => (
     <StructureUnit unit={unit} key={unit.id} />
   ));

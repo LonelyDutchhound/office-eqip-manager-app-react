@@ -11,7 +11,6 @@ import Footer from "./components/Footer";
 import ListContainer from "./components/Containers/ListContainer";
 
 Auth();
-
 const store = configureStore();
 store.runSaga(rootSaga);
 

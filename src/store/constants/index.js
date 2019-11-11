@@ -4,3 +4,4 @@ export const ADD_EQUIPMENT = "ADD_EQUIPMENT";
 export const DELETE_EQUIPMENT = "DELETE_EQUIPMENT";
 export const EDIT_EQUIPMENT = "EDIT_EQUIPMENT";
 export const SHOW_EQUIPMENT = "SHOW_EQUIPMENT";
+export const SET_IS_ROOM = "SET_IS_ROOM";
