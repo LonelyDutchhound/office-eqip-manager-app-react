@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="553660b4-7484-4661-bc32-1edb49bb8ca8" name="Default Changelist" comment="">
+    <list default="true" id="553660b4-7484-4661-bc32-1edb49bb8ca8" name="Default Changelist" comment="+ overflow for presentation (panel) components">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/EquipmentList/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/EquipmentList/index.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/EquipmentList/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/EquipmentList/style.css" afterDir="false" />
@@ -105,7 +105,8 @@
       <workItem from="1573471865365" duration="2000" />
       <workItem from="1573473685022" duration="297000" />
       <workItem from="1573478834022" duration="8711000" />
-      <workItem from="1573549169148" duration="734000" />
+      <workItem from="1573549169148" duration="964000" />
+      <workItem from="1573550289717" duration="25000" />
     </task>
     <task id="LOCAL-00001" summary="structure, store+store setters, sketch components">
       <created>1573171734567</created>
@@ -163,7 +164,14 @@
       <option name="project" value="LOCAL" />
       <updated>1573513631461</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="- redundant state in equipList component -&gt; redux">
+      <created>1573550106088</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1573550106088</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -202,6 +210,7 @@
     <MESSAGE value="-- ID &amp; keys" />
     <MESSAGE value="when user is adding equipment - disabled room switch" />
     <MESSAGE value="+ overflow for presentation (panel) components" />
-    <option name="LAST_COMMIT_MESSAGE" value="+ overflow for presentation (panel) components" />
+    <MESSAGE value="- redundant state in equipList component -&gt; redux" />
+    <option name="LAST_COMMIT_MESSAGE" value="- redundant state in equipList component -&gt; redux" />
   </component>
 </project>

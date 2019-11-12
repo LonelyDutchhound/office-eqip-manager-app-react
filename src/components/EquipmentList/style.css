@@ -4,6 +4,7 @@
   background-color: #ffffff;
   border: 1px solid #ffffff;
   border-collapse: collapse;
+  overflow: auto;
 }
 .panel__list {
   background-color: #ffffff;

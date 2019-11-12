@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { connect } from "react-redux";
 import "./style.css";
 import EquipmentUnit from "../EquipmentUnit";
@@ -6,20 +6,22 @@ import SmallButton from "../SmallButton";
 import AddUnit from "../AddUnit";
 import { isAddingOn } from "../../store/actions/equipmentActions";
 
-const EquipmentList = ({ unitList, startText, isRoom, setIsAddingOn }) => {
+const EquipmentList = ({
+  unitList,
+  startText,
+  isRoom,
+  setIsAddingOn,
+  checkAddingOn
+}) => {
   const equipmentUnit = !startText
     ? unitList.map(unit => <EquipmentUnit unit={unit} key={unit.id} />)
     : startText;
 
-  const [isAdding, setIsAdding] = useState(false);
-
   const handleCancel = async () => {
-    await setIsAdding(false);
-    setIsAddingOn(!isAdding);
+    setIsAddingOn(false);
   };
   const handleClickAddButton = async () => {
-    await setIsAdding(!isAdding);
-    setIsAddingOn(!isAdding);
+    await setIsAddingOn(!checkAddingOn);
   };
   const addUnit = (
     <AddUnit
@@ -30,7 +32,7 @@ const EquipmentList = ({ unitList, startText, isRoom, setIsAddingOn }) => {
   return (
     <div className="panel">
       <ul className="panel__list">{equipmentUnit}</ul>
-      {isRoom && !isAdding ? (
+      {isRoom && !checkAddingOn ? (
         <SmallButton
           name="Добавить оборудование"
           className="panel__button_add"
@@ -38,7 +40,7 @@ const EquipmentList = ({ unitList, startText, isRoom, setIsAddingOn }) => {
           onClick={handleClickAddButton}
         />
       ) : null}
-      {isAdding ? addUnit : null}
+      {checkAddingOn ? addUnit : null}
     </div>
   );
 };
@@ -47,7 +49,11 @@ const mapDispatchToProps = dispatch => ({
   setIsAddingOn: isAdding => dispatch(isAddingOn(isAdding))
 });
 
+const mapStateToProps = state => ({
+  checkAddingOn: state.isAddingOn
+});
+
 export default connect(
-  null,
+  mapStateToProps,
   mapDispatchToProps
 )(EquipmentList);

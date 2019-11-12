@@ -4,6 +4,7 @@ import { BUILDINGS, EQUIPMENT } from "../../sagas/constants";
 const equipMap = equipArray => {
   return equipArray.reduce((accum, next) => {
     const { _id, name, room, count } = next;
+    // eslint-disable-next-line no-param-reassign
     accum[next.room] = accum[next.room]
       ? [
           ...accum[next.room],
@@ -29,6 +30,7 @@ const equipMap = equipArray => {
 const structureMap = structureArray => {
   return structureArray.map(building => {
     const mapedBuilding = {
+      // eslint-disable-next-line no-underscore-dangle
       id: building._id,
       name: building.name
     };
@@ -62,7 +64,7 @@ export default async infoField => {
         return [];
     }
   } catch (error) {
-    console.log(error);
+    console.log(error); // Temporary solution - errorlog & errorboundaries are needed
     return error;
   }
 };
