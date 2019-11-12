@@ -1,6 +1,6 @@
 ### Проект создан с помощью CLI Create React App
 
-## Развернут тут: https://lonelydutchhound.github.io/office-equip-manager-app/
+## Развернут тут: https://lonelydutchhound.github.io/office-eqip-manager-app-react/
 
 ## Задание
 
