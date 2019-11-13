@@ -11,7 +11,7 @@ const EquipmentList = ({
   startText,
   isRoom,
   setIsAddingOn,
-  checkAddingOn
+  AddIsOn
 }) => {
   const equipmentUnit = !startText
     ? unitList.map(unit => <EquipmentUnit unit={unit} key={unit.id} />)
@@ -21,7 +21,7 @@ const EquipmentList = ({
     setIsAddingOn(false);
   };
   const handleClickAddButton = async () => {
-    await setIsAddingOn(!checkAddingOn);
+    await setIsAddingOn(!AddIsOn);
   };
   const addUnit = (
     <AddUnit
@@ -32,7 +32,7 @@ const EquipmentList = ({
   return (
     <div className="panel">
       <ul className="panel__list">{equipmentUnit}</ul>
-      {isRoom && !checkAddingOn ? (
+      {isRoom && !AddIsOn ? (
         <SmallButton
           name="Добавить оборудование"
           className="panel__button_add"
@@ -40,7 +40,7 @@ const EquipmentList = ({
           onClick={handleClickAddButton}
         />
       ) : null}
-      {checkAddingOn ? addUnit : null}
+      {AddIsOn ? addUnit : null}
     </div>
   );
 };
@@ -50,7 +50,7 @@ const mapDispatchToProps = dispatch => ({
 });
 
 const mapStateToProps = state => ({
-  checkAddingOn: state.isAddingOn
+  AddIsOn: state.isAddingOn
 });
 
 export default connect(

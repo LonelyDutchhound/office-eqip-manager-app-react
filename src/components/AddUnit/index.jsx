@@ -11,9 +11,11 @@ const AddUnit = ({ handleCancel, handleClickAddButton, addNewEquipment }) => {
   const [name, setName] = useState("");
   const [quantity, setQuantity] = useState("1");
   const [error, setError] = useState(false);
+
+  const errorMessage = "Введите правильные данные или отмените операцию";
+
   const onTextChange = ({ target: { value } }) => setName(value);
   const onQuantityChange = ({ target: { value } }) => setQuantity(value);
-  const errorMessage = "Введите правильные данные или отмените операцию";
   const handleClickAdd = () => {
     if (name && name.match(/^[А-Яа-я]+[0-9]*/) && quantity > 0) {
       setError(false);
