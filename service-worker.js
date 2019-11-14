@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/office-equip-manager-app/precache-manifest.04fe1836bd93b25751dec9cd76b26a7b.js"
+  "/office-equip-manager-app/precache-manifest.c593b505759387e25b04a1c6bb0945d2.js"
 );
 
 self.addEventListener('message', (event) => {

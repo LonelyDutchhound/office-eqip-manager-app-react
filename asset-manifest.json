@@ -1,21 +1,21 @@
 {
   "files": {
     "main.css": "/office-equip-manager-app/static/css/main.22e98960.chunk.css",
-    "main.js": "/office-equip-manager-app/static/js/main.d05bbeb7.chunk.js",
-    "main.js.map": "/office-equip-manager-app/static/js/main.d05bbeb7.chunk.js.map",
+    "main.js": "/office-equip-manager-app/static/js/main.35e927c8.chunk.js",
+    "main.js.map": "/office-equip-manager-app/static/js/main.35e927c8.chunk.js.map",
     "runtime-main.js": "/office-equip-manager-app/static/js/runtime-main.fb01168d.js",
     "runtime-main.js.map": "/office-equip-manager-app/static/js/runtime-main.fb01168d.js.map",
-    "static/js/2.14500fd3.chunk.js": "/office-equip-manager-app/static/js/2.14500fd3.chunk.js",
-    "static/js/2.14500fd3.chunk.js.map": "/office-equip-manager-app/static/js/2.14500fd3.chunk.js.map",
+    "static/js/2.d026bc4c.chunk.js": "/office-equip-manager-app/static/js/2.d026bc4c.chunk.js",
+    "static/js/2.d026bc4c.chunk.js.map": "/office-equip-manager-app/static/js/2.d026bc4c.chunk.js.map",
     "index.html": "/office-equip-manager-app/index.html",
-    "precache-manifest.04fe1836bd93b25751dec9cd76b26a7b.js": "/office-equip-manager-app/precache-manifest.04fe1836bd93b25751dec9cd76b26a7b.js",
+    "precache-manifest.c593b505759387e25b04a1c6bb0945d2.js": "/office-equip-manager-app/precache-manifest.c593b505759387e25b04a1c6bb0945d2.js",
     "service-worker.js": "/office-equip-manager-app/service-worker.js",
     "static/css/main.22e98960.chunk.css.map": "/office-equip-manager-app/static/css/main.22e98960.chunk.css.map"
   },
   "entrypoints": [
     "static/js/runtime-main.fb01168d.js",
-    "static/js/2.14500fd3.chunk.js",
+    "static/js/2.d026bc4c.chunk.js",
     "static/css/main.22e98960.chunk.css",
-    "static/js/main.d05bbeb7.chunk.js"
+    "static/js/main.35e927c8.chunk.js"
   ]
 }
