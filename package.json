@@ -2,7 +2,7 @@
   "name": "office-equip-manager-app",
   "version": "0.1.0",
   "private": true,
-  "homepage" : "http://LonelyDutchhound.github.io/office-equip-manager-app",
+  "homepage" : "https://lonelydutchhound.github.io/office-eqip-manager-app-react/",
   "dependencies": {
     "prettier": "^1.18.2",
     "react": "^16.11.0",
