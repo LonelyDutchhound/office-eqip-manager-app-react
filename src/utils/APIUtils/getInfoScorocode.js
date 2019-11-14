@@ -41,10 +41,18 @@ const structureMap = structureArray => {
           name: room.name
         };
         if (room.children)
-          mapedRoom.rooms = room.children.map(child => ({
-            id: child.id,
-            name: child.name
-          }));
+          mapedRoom.rooms = room.children.map(child => {
+            const mapedChild = {
+              id: child.id,
+              name: child.name
+            };
+            if (child.children)
+              mapedChild.rooms = child.children.map(childrenChild => ({
+                id: childrenChild.id,
+                name: childrenChild.name
+              }));
+            return mapedChild;
+          });
         return mapedRoom;
       });
     return mapedBuilding;
