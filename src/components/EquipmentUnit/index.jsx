@@ -3,7 +3,6 @@ import { connect } from "react-redux";
 import SmallButton from "../SmallButton";
 import QuantityInput from "../QuantityInput";
 import { RED, BLUE, GREEN } from "../styleConstants";
-import "./style.css";
 import {
   deleteEquipment,
   editEquipment

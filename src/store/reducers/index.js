@@ -9,17 +9,16 @@ import {
   SHOW_EQUIPMENT
 } from "../constants/index";
 
-const rootReducer = (
-  state = {
-    structure: [],
-    equipment: {},
-    showEquipArray: [],
-    postItemData: {},
-    isRoom: false,
-    isAddingOn: false
-  },
-  action
-) => {
+const initState = {
+  structure: [],
+  equipment: {},
+  showEquipArray: [],
+  postItemData: {},
+  isRoom: false,
+  isAddingOn: false
+};
+
+const rootReducer = (state = initState, action) => {
   switch (action.type) {
     case SET_STRUCTURE:
       return { ...state, structure: action.structure };

@@ -9,6 +9,7 @@ const { setEquipment } = getInfo;
 export default function* addEquipmentSaga() {
   const itemData = yield select(state => state.postItemData);
   const roomData = yield select(state => state.isRoom);
+  console.log(itemData, roomData);
   const addItemData = {
     id: roomData,
     name: itemData.name,

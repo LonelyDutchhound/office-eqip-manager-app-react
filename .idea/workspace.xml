@@ -3,10 +3,13 @@
   <component name="ChangeListManager">
     <list default="true" id="553660b4-7484-4661-bc32-1edb49bb8ca8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/EquipmentUnit/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/EquipmentUnit/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/EquipmentUnit/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/QuantityInput/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/QuantityInput/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/TextInput/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/TextInput/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sagas/addEquipmentSaga.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/sagas/addEquipmentSaga.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/reducers/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/reducers/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/utils/APIUtils/addEquipScorocode.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/APIUtils/addEquipScorocode.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/APIUtils/deleteEquipScorocode.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/APIUtils/deleteEquipScorocode.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/APIUtils/editEquipScorocode.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/APIUtils/editEquipScorocode.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -114,7 +117,10 @@
       <workItem from="1573622862012" duration="515000" />
       <workItem from="1573715028756" duration="5024000" />
       <workItem from="1573736857253" duration="599000" />
-      <workItem from="1573752861047" duration="305000" />
+      <workItem from="1573752861047" duration="369000" />
+      <workItem from="1573756725390" duration="355000" />
+      <workItem from="1573766841032" duration="4000" />
+      <workItem from="1573932274786" duration="284000" />
     </task>
     <task id="LOCAL-00001" summary="structure, store+store setters, sketch components">
       <created>1573171734567</created>
@@ -207,7 +213,14 @@
       <option name="project" value="LOCAL" />
       <updated>1573718109152</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="try/catch in async func">
+      <created>1573753201091</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1573753201091</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -251,6 +264,7 @@
     <MESSAGE value="refactoring: reducer" />
     <MESSAGE value="fixed bug with deep nested structure of building" />
     <MESSAGE value="readme changes" />
-    <option name="LAST_COMMIT_MESSAGE" value="readme changes" />
+    <MESSAGE value="try/catch in async func" />
+    <option name="LAST_COMMIT_MESSAGE" value="try/catch in async func" />
   </component>
 </project>

@@ -1,6 +1,6 @@
 .item__input {
   display: flex;
-  width: 70%;;
+  width: 70%;
   margin: 3px;
   flex-grow: 1;
 }
